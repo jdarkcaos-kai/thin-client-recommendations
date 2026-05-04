@@ -75,9 +75,12 @@
                 const card = document.createElement('div');
                 card.className = 'card';
                 card.innerHTML = `
-                    <h3>${client.name}</h3>
-                    <p>${client.description}</p>
-                    <button class="button" onclick="selectClient(${client.id})">Seleccionar</button>
+                    <h3 style="color:#58a6ff;margin:0 0 6px">${client.modelo || client.name || "Sin nombre"}</h3>
+                    <p style="color:#8b949e;font-size:12px;margin:0 0 8px">${client.marca || client.brand || ""} · ${client.categoria || client.category || ""}</p>
+                    <p style="font-size:13px;margin:4px 0"><strong>RAM:</strong> ${client.ram || "—"} · <strong>Almacenamiento:</strong> ${client.almacenamiento || client.storage || "—"}</p>
+                    <p style="font-size:13px;margin:4px 0"><strong>Precio:</strong> $${client.precio_usd || client.price || "—"} USD</p>
+                    <p style="font-size:12px;color:#8b949e;margin-top:8px">${client.descripcion || client.description || ""}</p>
+                    <button class="button" style="margin-top:10px;width:100%" onclick="selectClient(${client.id})">Ver detalles</button>
                 `;
                 container.appendChild(card);
             });
@@ -118,7 +121,7 @@
             fetch(`/thin_clients/${clientId}`)
                 .then(response => response.json())
                 .then(client => {
-                    alert(`Has seleccionado: ${client.name}`);
+                    alert(`Has seleccionado: ${client.modelo || client.name || ""}`);
                 })
                 .catch(error => console.error('Error fetching client details:', error));
         }
