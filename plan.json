@@ -1,0 +1,44 @@
+{
+  "id": "P-0005",
+  "source_idea_id": "I-0004",
+  "name": "Thin client recommendations",
+  "problem": "Los administradores y power users necesitan recomendaciones precisas y personalizadas de thin clients para optimizar su infraestructura de TI.",
+  "audience": "Administradores de sistemas y usuarios avanzados en entornos corporativos.",
+  "mvp": "Una herramienta web que permite a los usuarios ingresar sus requisitos técnicos y recibir recomendaciones de thin clients basadas en esos criterios.",
+  "stack": [
+    "React",
+    "Node.js",
+    "MongoDB"
+  ],
+  "roadmap": [
+    "Investigar las especificaciones de thin clients populares",
+    "Desarrollar la interfaz de usuario y la lógica de recomendación",
+    "Lanzar una versión beta para feedback de usuarios"
+  ],
+  "risks": [
+    "Falta de adopción por parte de la audiencia objetivo",
+    "Dificultades en la integración de datos de productos",
+    "Competencia de herramientas ya establecidas en el mercado"
+  ],
+  "category": "sysadmin",
+  "priority": "alta",
+  "source": "reddit",
+  "status": "draft",
+  "notes": "",
+  "plan_generated_at": "2026-05-04T04:03:34.591196Z",
+  "build_generated_at": null,
+  "build_path": "",
+  "build_template": "",
+  "build_status": "not_built",
+  "audit_generated_at": null,
+  "audit_status": "",
+  "audit_summary": "",
+  "audit_report_path": "",
+  "llm_audit_generated_at": null,
+  "llm_audit_status": "",
+  "llm_audit_summary": "",
+  "llm_audit_report_path": "",
+  "llm_audit_model": "",
+  "created_at": "2026-05-04T04:03:28.535313Z",
+  "updated_at": "2026-05-04T04:03:34.591202Z"
+}
